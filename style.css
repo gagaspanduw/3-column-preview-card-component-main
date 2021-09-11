@@ -1,0 +1,110 @@
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Deca&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&display=swap');
+
+:root{
+    --bright-orange: hsl(31, 77%, 52%);
+    --dark-cyan: hsl(184, 100%, 22%);
+    --very-dark-cyan: hsl(179, 100%, 13%);
+    --transparent-white: hsla(0, 0%, 100%, 0.75);
+    --very-light-gray: hsl(0, 0%, 95%);
+    --lexen-deca: "Lexend Deca", sans-serif;
+    --big-shoulder: 'Big Shoulders Display', cursive;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+main{
+     padding: 100px 10px;
+}
+
+.card-sedans, .card-suvs, .card-luxury{
+    padding: 50px;
+    margin: 0 10px;
+}
+
+.card-sedans{
+    background: var(--bright-orange);
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.card-suvs{
+    background: var(--dark-cyan);
+}
+
+.card-luxury{
+    background: var(--very-dark-cyan);
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+h1{
+    margin: 20px 0px;
+    font-family: var(--big-shoulder);
+    color: var(--very-light-gray);
+    text-transform: uppercase;
+    font-size: 40px;
+}
+
+.card-sedans p, .card-suvs p, .card-luxury p {
+    margin: 30px 34px 30px 0;
+    color: var(--transparent-white);
+    font-family: var(--lexen-deca);
+}
+
+.card-sedans button, .card-suvs button, .card-luxury button{
+    border: none;
+    border-radius: 50px;
+    background: white;
+    padding: 15px 30px;
+    font-size: 15px;
+    font-family: var(--lexen-deca);
+
+}
+
+.card-sedans button{
+    color: var(--bright-orange);
+}
+
+.card-suvs button{
+    color: var(--dark-cyan);
+}
+
+.card-luxury button{
+    color: var(--very-dark-cyan);
+}
+
+@media(min-width:920px) {
+    
+    main{
+        display: flex;
+        padding: 80px 250px;
+    }
+
+    .card-sedans, .card-suvs, .card-luxury{
+        padding: 50px;
+        margin: 0;
+        border-radius: 0;
+    }
+
+    .card-sedans p, .card-suvs p, .card-luxury p {
+        margin-bottom: 80px;
+        line-height: 28px;
+        margin-right: 20px;
+    }
+
+    .card-sedans{
+        border-top-left-radius: 10px;
+        border-bottom-left-radius: 10px;
+    }
+
+    .card-luxury{
+        border-top-right-radius: 10px;
+        border-bottom-right-radius: 10px;
+    }
+
+}
+
